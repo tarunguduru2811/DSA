@@ -1,3 +1,5 @@
+package Arrays.Day1;
+
 public class FindMax {
 
     public static int findMax(int[] arr){

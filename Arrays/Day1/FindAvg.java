@@ -1,3 +1,5 @@
+package Arrays.Day1;
+
 class Solution{
     
     public static double findAvg(int arr[]){

@@ -1,3 +1,5 @@
+package Arrays.Day1;
+
 public class CountZeroes {
 
     public static int[] countZeroesOnes(int arr[]){

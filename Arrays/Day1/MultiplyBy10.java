@@ -1,3 +1,5 @@
+package Arrays.Day1;
+
 public class MultiplyBy10 {
 
     public static int[] multiplyby10(int arr[]){

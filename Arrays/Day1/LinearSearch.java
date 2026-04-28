@@ -1,3 +1,5 @@
+package Arrays.Day1;
+
 public class LinearSearch {
 
     public static boolean findTarget(int arr[],int target){
