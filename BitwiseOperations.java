@@ -49,12 +49,17 @@ public class BitwiseOperations {
             System.out.println("Odd");
         }
 
+        
         System.out.println("Set Bits: " + countSetBit(n));
 
         System.out.println(n + " is power of 2 " + powerOfTwo(n));
 
        
         swapWithoutTemp(a, b);
+
+        int x = 10;
+        System.out.println("Removing last set bit of " + 10 + " will be become " + (x & (x-1)));
+        System.out.println("Last Set bit of "+x + " will be " + (-x & x));
         
     }
 }
