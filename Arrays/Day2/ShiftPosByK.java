@@ -14,7 +14,7 @@ public class ShiftPosByK {
         int j = k - 1;
         
 
-        //stpring last k values in temp array
+        //storing last k values in temp array
         //Running array from last to last-k-1
 
         for(int i=n-1;i>n-1-k;i--){
