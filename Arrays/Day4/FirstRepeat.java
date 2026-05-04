@@ -1,4 +1,4 @@
-package Day4;
+package Arrays.Day4;
 
 import java.util.HashMap;
 

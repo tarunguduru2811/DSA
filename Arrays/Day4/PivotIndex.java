@@ -1,4 +1,4 @@
-package Day4;
+package Arrays.Day4;
 
 public class PivotIndex {
     
