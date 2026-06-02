@@ -62,16 +62,75 @@ public class BookAllocation {
 }
 
 
-//Example -> 10,20,30,40,50 , k = 2
+// [12, 34, 67, 90]
+// s = 1
+// e = 203 
+// mid = 102 
 
-// 1 - 150 
-// s=1 , e=150 , mid => 75 -> isPossible(75) -> not possible so move right
-//s=76 , e=150 , mid => 113 -> isPossible(113) -> yes -> so move left and store ans = 113
-//s=76 , e=112, mid => 94 -> isPossible(94) -> yes -> so move left and ans = 94
-//s=76 , e=93 , mid => 84 -> isPossible(84) -> not -> so move right
-//s=85 , e=93 , mid => 89 -> isPossible(89) -> not -> so move right
-//s=90 , e=93, mid => 91 -> isPossible(91) -> yes -> so move left and ans=91
-//s=90,e=90, mid=> 90 -> isPossible(90) -> yes -> so move left and ans = 90
-//s=90, e=89 -> s>e -> not possible
+// isValid -> student 1 -> 12 , 34
+//            studen 2 -> 67 , 90 -> Not Valid , which means that we are not able to distribute the books 
+//                                   which means that with less number we are not able to satisfy of distribution
+//                                   so move right
+                                  
+                                  
+// s = 103 
+// e = 203 
+// mid = 153
 
-//so the answer = 90 which means the minimum of the maximum pages that student needs to be read is 90 pages
+// isValid -> student 1 -> 12, 34 , 67 
+//            student 2 -> 90  -> It is a valid solution and can be potential answer,Now we can able to satisfy 
+//                                with more that this number and we also want to get the min of max,so move left
+//                                ans = 153
+                               
+
+// s = 103 
+// e = 152
+// mid = 127
+
+// isValid -> student 1 -> 12,34, 67 <=127
+//            student 2 -> 90 <= 127 -> It is valid,so ans = 127 
+           
+           
+// s = 103
+// e = 126
+// mid = 114 
+
+// isValid -> student 1 -> 12,32,67 <= 114
+//            student 2 -> 90 <= 114 -> It is valid,so ans = 114
+           
+           
+// s = 103
+// e = 113
+// mid = 108 
+
+// isValid -> student 1 -> 12,34 <= 108
+//            student 2 -> 67,90 -> Not Valid 
+           
+           
+// s = 109 
+// e = 113
+// mid = 111
+
+// isValid -> student 1 -> 12,34 <= 108
+//             student 2 -> 67,90 -> Not valid
+
+
+// s = 112
+// e = 113
+// mid = 112
+
+// isValid -> student 1 -> 12,34 <= 112
+//            student 2 -> 67,90 -> Not Valid
+           
+// s = 113
+// e = 113 
+// mid = 113
+
+// isValid -> student 1 -> 12,34,67 <= 113
+//            student 2 -> 90 <= 113 -> Valid , ans = 113 
+           
+// s = 113 
+// e = 112 
+// s <= e -> Stop Execution and return ans = 113 
+
+// 113 is the max pages that a student read which is min of all possible cases
