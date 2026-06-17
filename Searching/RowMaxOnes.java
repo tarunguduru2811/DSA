@@ -58,7 +58,7 @@ public class RowMaxOnes {
         return new int[]{maxOnesRowIndex,maxOnes};
 
     }
-   
+    
     public static void main(String[] args) {
         int[][] arr = {
             {0,0},
