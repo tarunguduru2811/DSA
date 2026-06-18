@@ -2,7 +2,6 @@ package Strings;
 
 public class RemoveAllOccurences {
     public static String removeAllOccurencesofPart(String s,String part){
-        int n = s.length();
         int m = part.length();
 
         while(s.contains(part)){
