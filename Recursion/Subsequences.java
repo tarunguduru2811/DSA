@@ -1,4 +1,4 @@
-package Strings;
+package Recursion;
 
 import java.util.ArrayList;
 import java.util.Collections;
